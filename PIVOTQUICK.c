@@ -9,12 +9,12 @@ void swap(int* a, int* b) {
 // Fungsi untuk mempartisi array dan mengembalikan indeks pivot
 int partition(int arr[], int low, int high) {
     int pivot = arr[high];  // Pivot diambil dari elemen terakhir
-    int i = (low - 1);  // Indeks elem	en yang lebih kecil
+    int i = (low - 1);  // Indeks elemen yang lebih kecil
 
     for (int j = low; j <= high - 1; j++) {
         // Jika elemen saat ini lebih kecil atau sama dengan pivot
         if (arr[j] <= pivot) {
-            i++;  // Meningkatkan ind eks elemen yang lebih kecil
+            i++;  // Meningkatkan indeks elemen yang lebih kecil
             swap(&arr[i], &arr[j]);
         }
     }

@@ -1,5 +1,5 @@
 #include<stdio.h>
-int binarySearch(int arr[], int left, int right, int target);
+int binarySearch(int arr[], int left, int right, short target);
 int binarySearch(int arr[], int left, int right, short target)
 {
 	while(left <= right)
@@ -16,9 +16,9 @@ int binarySearch(int arr[], int left, int right, short target)
 }
 int main()
 {
-	int array[] = {10, 31, 2, 21, 27, 8};
+	int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 	int n = sizeof(array) / sizeof(array[0]);
-	int target = 27;
+	int target; scanf("%d", &target);
 	
 	int result = binarySearch(array, 0, n-1, target);
 	if (result != 1)
