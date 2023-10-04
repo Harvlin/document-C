@@ -21,7 +21,7 @@ int main()
 	int target; scanf("%d", &target);
 	
 	int result = binarySearch(array, 0, n-1, target);
-	if (result != 1)
+	if (result != -1)
 		printf("Elemen %d ditemukan di indeks %d\n", target, result);
 	else
 		printf("Tidak ditemukan");

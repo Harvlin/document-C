@@ -1,0 +1,1327 @@
+<http://www.histats.com/>
+Malas Ngoding
+
+<http://www.malasngoding.com/>
+
+  * //
+
+  * HOME
+
+    <http://www.malasngoding.com/>
+  * TOKO
+
+    <http://www.malasngoding.com/shop>
+  * TUTORIAL
+
+    <http://www.malasngoding.com/tutorial/>
+  * DEMO
+
+    <http://www.malasngoding.com/demo/>
+  * BUKTI PENGIRIMAN
+
+    <http://www.malasngoding.com/bukti-pengiriman/>
+  * LABORATORIUM
+
+    <http://www.malasngoding.com/lab>
+
+  * //
+
+  * Web Programming
+
+    <#>
+      o HTML
+
+        <http://www.malasngoding.com/category/html/>
+      o CSS
+
+        <http://www.malasngoding.com/category/css/>
+      o JavaScript
+
+        <http://www.malasngoding.com/category/javascript/>
+      o PHP
+
+        <http://www.malasngoding.com/category/php/>
+      o CodeIgniter
+
+        <http://www.malasngoding.com/category/codeigniter/>
+      o JQuery
+
+        <http://www.malasngoding.com/category/jquery/>
+      o CSS3
+
+        <http://www.malasngoding.com/category/css3/>
+      o Bootstrap
+
+        <http://www.malasngoding.com/category/bootstrap/>
+      o Sass
+
+        <http://www.malasngoding.com/category/sass/>
+      o AngularJS
+
+        <http://www.malasngoding.com/category/angularjs/>
+  * Desktop Programming
+
+    <#>
+      o Java
+
+        <http://www.malasngoding.com/category/java/>
+  * Mobile Programming
+
+    <#>
+      o Ionic
+
+        <http://www.malasngoding.com/category/ionic/>
+  * Database
+
+    <#>
+      o MySQL
+
+        <http://www.malasngoding.com/category/mysql/>
+  * CMS
+
+    <#>
+      o WordPress
+
+        <http://www.malasngoding.com/category/wordpress/>
+  * Tools
+
+    <#>
+      o Sublime Text Editor
+
+        <http://www.malasngoding.com/category/sublime-text-editor/>
+  * Inspirasi
+
+    <#>
+      o Web Design
+
+        <http://www.malasngoding.com/category/web-design/>
+
+  *
+
+
+          Cari tutorial ..
+
+//
+Search
+
+Home <http://www.malasngoding.com/> » Posts
+<http://www.malasngoding.com/> » Membuat CRUD Dengan PHP Dan MySQL –
+Menampilkan Data Dari Database
+
+
+  Membuat CRUD Dengan PHP Dan MySQL – Menampilkan Data Dari Database
+
+  * By Diki Alfarabi Hadi <http://www.malasngoding.com/author/admin/>
+  * 12 February 2016
+  * PHP <http://www.malasngoding.com/category/php/>	
+
+
+    Membuat CRUD Dengan PHP Dan MySQL – Menampilkan Data Dari Database
+
+/*Membuat CRUD Dengan PHP Dan MySQL – Menampilkan Data Dari Database*/ –
+Halo teman-teman apa kabar? mudah-mudahan selalu di berikan kesehatan
+ya. di tutorial ini kita akan masuk ke tutorial edisi membuat crud
+dengan php dan menggunakan database mysql. tutorial ini termasuk
+tutorial yang paling penting yang harus teman-teman pelajari. kenapa
+tidak di tutorial ini akan di jelaskan tentang *pengertian CRUD*, cara
+membuat CRUD, dan kenapa saya bilang tutorial crud ini yang paling
+terpenting ? karena crud di gunakan untuk membuat semua aplikasi. karena
+berhubungan dengan menginput data ke database, mengedit data dari
+database , menampilkan data dari database serta menghapus data yang
+tidak di inginkan pada database dengan menggunakan PHP.
+
+Pasti sudah terbayang kan oleh teman-teman betapa penting nya tutorial
+CRUD ? teman-teman tidak akan bisa membuat sebuah /aplikasi/ bahkan yang
+sangat sederhana sekalipun jika tidak menguasai konsep crud. kecuali
+aplikasi yang teman-teman buat tidak berhubungan dengan database.
+tutorial ini saya tujukan kepada teman-teman yang mungkin baru belajar
+php. mungkin sudah mempelajari php dasar dan bingung ingin melanjutkan
+pembelajaran selanjutnya kemana. saya rekomendasikan kepada teman-teman
+untuk mempelajari tutorial php dasar terlebih dulu di
+www.malasngoding.com. berikut ini tutorial php dasar di
+www.malasngoding.com yang harus teman-teman kuasai terlebih dulu sebelum
+memulai membuat CRUD(manajemen database) dengan PHP dan MYSQL. /*Membuat
+CRUD Dengan PHP Dan MySQL*/
+
+
+      Pengertian CRUD (Create, Read, Update dan Delete)
+
+Sebelum memulai belajar cara membuat crud dengan php dan mysql –
+menampilkan data dari database dan sebelum lebih jauh lagi mengotak atik
+. ada baik nya terlebih dulu saya jelaskan tentang pengertian dari CRUD
+karena mungkin masih banyak teman-teman yang masih bingung tentang apa
+sih crud ini?
+
+CRUD adalah singkatan dari*Create, Read, Update and Delete*. jadi di
+singkat dengan crud. berbicara tentang create, read, update, delete..
+pasti kita terbayang tentang sebuah manajemen atau mengelola. yak benar
+sekali. CRUD di sini adalah yang mengelola database. misalnya seperti
+menginput data ke database(Create), Menampilkan data dari
+database(Read), Mengubah atau mengupdate data pada database(Update) dan
+menghapus data pada database(Delete). nah kesimpulan nya di edisi kali
+ini kita akan belajar tentang membuat form input yang menginput data ke
+database.*cara menampilkan data dari database*. mengubah data dari
+database serta belajar cara menghapus data pada database dengan php.
+sedikit informasi bahwa database yang kita gunakan pada tutorial ini
+adalah database MySQL.
+
+
+       Persiapan Membuat CRUD Dengan PHP dan MYSQL
+
+karena kita akan bermain dengan database. maka yang menjadi langkah awal
+kita adalah mempersiapkan database. untuk mengikuti panduan membuat crud
+dengan php di www.malasngoding.com ini buatlah sebuah database dengan
+nama ‘malasngoding’. dan buat sebuah table bernama ‘user’. yang berisi
+column id,nama,alamat,pekerjaan. jadi di sini kita akan membuat crud
+untuk data user. jadi nanti kita menampilkan data dari database,
+menginput data ke database, mengupdate dan menghapus data dari database.
+
+  * Membuat database dengan nama ‘malasngoding’.
+  * Buat sebuah table dengan nama ‘user’.
+  * Column pada table user nya ( id, nama, alamat, pekerjaan ).
+
+Berikut ini sudah saya sertakan file sql yang bisa teman-teman langsung
+import. cara menginport nya buat database nya dulu dengan nama
+malasngoding. kemudian pilih import untuk menginport file sql nya. tapi
+jika teman-teman ingin copy paste sql nya bisa juga. pilih pada sql.
+kemudian pastekan sql berikut ini.
+
+-- phpMyAdmin SQL Dump -- version 3.5.2.2 -- http://www.phpmyadmin.net
+-- -- Host: 127.0.0.1 -- Generation Time: Feb 12, 2016 at 09:28 AM --
+Server version: 5.5.27 -- PHP Version: 5.4.7 SET
+SQL_MODE="NO_AUTO_VALUE_ON_ZERO"; SET time_zone = "+00:00"; /*!40101 SET
+@OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */; /*!40101 SET
+@OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */; /*!40101 SET
+@OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */; /*!40101 SET NAMES
+utf8 */; -- -- Database: `malasngoding` -- --
+-------------------------------------------------------- -- -- Table
+structure for table `user` -- CREATE TABLE IF NOT EXISTS `user` ( `id`
+int(11) NOT NULL AUTO_INCREMENT, `nama` varchar(50) NOT NULL, `alamat`
+text NOT NULL, `pekerjaan` varchar(50) NOT NULL, PRIMARY KEY (`id`) )
+ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=64 ; -- -- Dumping
+data for table `user` -- INSERT INTO `user` (`id`, `nama`, `alamat`,
+`pekerjaan`) VALUES (1, 'Andi', 'Surabaya', 'web programmer'), (2,
+'Santoso', 'Jakarta', 'Web Designer'), (6, 'Samsul', 'Sumedang',
+'Pegawai'); /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT
+*/; /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+	
+-- phpMyAdmin SQL Dump
+-- version 3.5.2.2
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 12, 2016 at 09:28 AM
+-- Server version: 5.5.27
+-- PHP Version: 5.4.7
+ 
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+ 
+ 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+ 
+--
+-- Database: `malasngoding`
+--
+ 
+-- --------------------------------------------------------
+ 
+--
+-- Table structure for table `user`
+--
+ 
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama` varchar(50) NOT NULL,
+  `alamat` text NOT NULL,
+  `pekerjaan` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=64 ;
+ 
+--
+-- Dumping data for table `user`
+--
+ 
+INSERT INTO `user` (`id`, `nama`, `alamat`, `pekerjaan`) VALUES
+(1, 'Andi', 'Surabaya', 'web programmer'),
+(2, 'Santoso', 'Jakarta', 'Web Designer'),
+(6, 'Samsul', 'Sumedang', 'Pegawai');
+ 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+membuat crud dengan php dan mysql
+
+membuat crud dengan php dan mysql
+
+
+      Cara Menampilkan Data Dari Database Dengan PHP
+
+Setelah selesai membuat database. selanjutnya kita langsung masuk
+ke*tutorial cara menampilkan data dari database dengan PHP*. oh iya
+pertama teman-teman harus paham dulu tentang mebuat koneksi database
+mysql dan php. silahkan teman-teman baca dulu tutorial*cara membuat
+koneksi PHP dengan database MySQL*
+<http://www.malasngoding.com/cara-membuat-koneksi-php-dengan-database-mysql/>. oke
+pertama kita buat dulu sebuah file php dengan nama nya terserah
+teman-teman. di sini saya membuat sebuah file koneksi.php. di file
+koneksi.php inilah nantinya akan kita buat *koneksi php dan mysql*.
+
+koneksi.php
+
+<?php // isi nama host, username mysql, dan password mysql anda $host =
+mysql_connect("localhost","root","xxx"); // isikan dengan nama database
+yang akan di hubungkan $db = mysql_select_db("malasngoding"); ?>
+1
+2
+3
+4
+5
+6
+7
+8
+	
+<?php 
+// isi nama host, username mysql, dan password mysql anda
+$host = mysql_connect("localhost","root","xxx");
+ 
+// isikan dengan nama database yang akan di hubungkan
+$db = mysql_select_db("malasngoding");
+ 
+?>
+
+silahkan teman-teman sesuaikan dengan username dan password mysql
+teman-teman. username saya root dan passwordnya xxx. jadi pengaturannya
+seperti di atas.
+
+kemudian buat sebuah file index.php. di file index.php ini kita akan
+menampilkan data dari database mysql. tepatnya dari table user yang
+telah kita buat di atas.
+
+index.php
+
+<!DOCTYPE html> <html> <head> <title>Membuat CRUD Dengan PHP Dan MySQL -
+Menampilkan data dari database</title> <link rel="stylesheet"
+type="text/css" href="style.css"> </head> <body> <div class="judul">
+<h1>Membuat CRUD Dengan PHP Dan MySQL</h1> <h2>Menampilkan data dari
+database</h2> <h3>www.malasngoding.com</h3> </div> <br/> <?php
+if(isset($_GET['pesan'])){ $pesan = $_GET['pesan']; if($pesan ==
+"input"){ echo "Data berhasil di input."; }else if($pesan == "update"){
+echo "Data berhasil di update."; }else if($pesan == "hapus"){ echo "Data
+berhasil di hapus."; } } ?> <br/> <a class="tombol" href="input.php">+
+Tambah Data Baru</a> <h3>Data user</h3> <table border="1" class="table">
+<tr> <th>No</th> <th>Nama</th> <th>Alamat</th> <th>Pekerjaan</th>
+<th>Opsi</th> </tr> <?php include "koneksi.php"; $query_mysql =
+mysql_query("SELECT * FROM user")or die(mysql_error()); $nomor = 1;
+while($data = mysql_fetch_array($query_mysql)){ ?> <tr> <td><?php echo
+$nomor++; ?></td> <td><?php echo $data['nama']; ?></td> <td><?php echo
+$data['alamat']; ?></td> <td><?php echo $data['pekerjaan']; ?></td> <td>
+<a class="edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a> |
+<a class="hapus" href="hapus.php?id=<?php echo $data['id'];
+?>">Hapus</a> </td> </tr> <?php } ?> </table> </body> </html>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+	
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membuat CRUD Dengan PHP Dan MySQL - Menampilkan data dari database</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="judul">		
+		<h1>Membuat CRUD Dengan PHP Dan MySQL</h1>
+		<h2>Menampilkan data dari database</h2>
+		<h3>www.malasngoding.com</h3>
+	</div>
+	<br/>
+ 
+	<?php 
+	if(isset($_GET['pesan'])){
+		$pesan = $_GET['pesan'];
+		if($pesan == "input"){
+			echo "Data berhasil di input.";
+		}else if($pesan == "update"){
+			echo "Data berhasil di update.";
+		}else if($pesan == "hapus"){
+			echo "Data berhasil di hapus.";
+		}
+	}
+	?>
+	<br/>
+	<a class="tombol" href="input.php">+ Tambah Data Baru</a>
+ 
+	<h3>Data user</h3>
+	<table border="1" class="table">
+		<tr>
+			<th>No</th>
+			<th>Nama</th>
+			<th>Alamat</th>
+			<th>Pekerjaan</th>
+			<th>Opsi</th>		
+		</tr>
+		<?php 
+		include "koneksi.php";
+		$query_mysql = mysql_query("SELECT * FROM user")or die(mysql_error());
+		$nomor = 1;
+		while($data = mysql_fetch_array($query_mysql)){
+		?>
+		<tr>
+			<td><?php echo $nomor++; ?></td>
+			<td><?php echo $data['nama']; ?></td>
+			<td><?php echo $data['alamat']; ?></td>
+			<td><?php echo $data['pekerjaan']; ?></td>
+			<td>
+				<a class="edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a> |
+				<a class="hapus" href="hapus.php?id=<?php echo $data['id']; ?>">Hapus</a>					
+			</td>
+		</tr>
+		<?php } ?>
+	</table>
+</body>
+</html>
+
+pada syntax
+
+<?php if(isset($_GET['pesan'])){ $pesan = $_GET['pesan']; if($pesan ==
+"input"){ echo "Data berhasil di input."; }else if($pesan == "update"){
+echo "Data berhasil di update."; }else if($pesan == "hapus"){ echo "Data
+berhasil di hapus."; } } ?>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+	
+<?php 
+if(isset($_GET['pesan'])){
+	$pesan = $_GET['pesan'];
+	if($pesan == "input"){
+		echo "Data berhasil di input.";
+	}else if($pesan == "update"){
+		echo "Data berhasil di update.";
+	}else if($pesan == "hapus"){
+		echo "Data berhasil di hapus.";
+	}
+}
+?>
+
+jangan teman-teman hiraukan dulu. akan saya bahas pada tutorial membuat
+crud dengan php part 2 nanti. karena /syntax/ di atas hanya pengambilan
+data melalui url untuk membuat pesan notifikasi misalnya data telah
+berhasil di update atau di hapus.
+
+yang perlu teman-teman perhatikan adalah pada syntax
+
+<table border="1" class="table"> <tr> <th>No</th> <th>Nama</th>
+<th>Alamat</th> <th>Pekerjaan</th> <th>Opsi</th> </tr> <?php include
+"koneksi.php"; $query_mysql = mysql_query("SELECT * FROM user")or
+die(mysql_error()); $nomor = 1; while($data =
+mysql_fetch_array($query_mysql)){ ?> <tr> <td><?php echo $nomor++;
+?></td> <td><?php echo $data['nama']; ?></td> <td><?php echo
+$data['alamat']; ?></td> <td><?php echo $data['pekerjaan']; ?></td> <td>
+<a class="edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a> |
+<a class="hapus" href="hapus.php?id=<?php echo $data['id'];
+?>">Hapus</a> </td> </tr> <?php } ?> </table>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+	
+<table border="1" class="table">
+	<tr>
+		<th>No</th>
+		<th>Nama</th>
+		<th>Alamat</th>
+		<th>Pekerjaan</th>
+		<th>Opsi</th>		
+	</tr>
+	<?php 
+	include "koneksi.php";
+	$query_mysql = mysql_query("SELECT * FROM user")or die(mysql_error());
+	$nomor = 1;
+	while($data = mysql_fetch_array($query_mysql)){
+	?>
+	<tr>
+		<td><?php echo $nomor++; ?></td>
+		<td><?php echo $data['nama']; ?></td>
+		<td><?php echo $data['alamat']; ?></td>
+		<td><?php echo $data['pekerjaan']; ?></td>
+		<td>
+		<a class="edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a> |
+		<a class="hapus" href="hapus.php?id=<?php echo $data['id']; ?>">Hapus</a>				
+		</td>
+	</tr>
+	<?php } ?>
+</table>
+
+dapat anda lihat pada syntax di atas. kenapa saya menggunakan element
+table html
+<http://www.malasngoding.com/belajar-html-membuat-tabel-pada-html/> di
+sini. karena kita akan menampilkan data nya di dalam table ini. lanjut
+lagi pada
+
+<?php include "koneksi.php"; $query_mysql = mysql_query("SELECT * FROM
+user")or die(mysql_error()); $nomor = 1; while($data =
+mysql_fetch_array($query_mysql)){ ?> <tr> <td><?php echo $nomor++;
+?></td> <td><?php echo $data['nama']; ?></td> <td><?php echo
+$data['alamat']; ?></td> <td><?php echo $data['pekerjaan']; ?></td> <td>
+<a class="edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a> |
+<a class="hapus" href="hapus.php?id=<?php echo $data['id'];
+?>">Hapus</a> </td> </tr> <?php } ?>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+	
+<?php 
+include "koneksi.php";
+$query_mysql = mysql_query("SELECT * FROM user")or die(mysql_error());
+$nomor = 1;
+while($data = mysql_fetch_array($query_mysql)){
+?>
+<tr>
+	<td><?php echo $nomor++; ?></td>
+	<td><?php echo $data['nama']; ?></td>
+	<td><?php echo $data['alamat']; ?></td>
+	<td><?php echo $data['pekerjaan']; ?></td>
+	<td>
+	<a class="edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a> |
+	<a class="hapus" href="hapus.php?id=<?php echo $data['id']; ?>">Hapus</a>			
+	</td>
+</tr>
+<?php } ?>
+
+coba teman-teman perhatikan pada syntax di atas. pertama kita harus
+menghubungkan file index.php ini dengan koneksi.php. atau menyisipkan
+file koneksi.php pada index.php ini. karena pada file index.php ini kita
+memerlukan /koneksi ke database/ untuk /*mengambil data dari database*/
+dan kemudian menampilkannya pada table. kita menyisipkan file
+koneksi.php dengan fungsi include.
+
+include "koneksi.php";
+1
+	
+include "koneksi.php";
+
+dan bisa teman-teman lihat juga terdapat fungsi mysql_query() . fungsi
+mysql_query berfungsi untuk menjalankan perintah mysql pada php
+<http://php.net/>. jadi perintah mysql nya teman-teman isikan pada
+fungsi mysql_query() seperti di bawah ini. dan perintah mysql yang kita
+jalankan adalah “Select * from user” yang berarti kita memerintahkan
+untuk menampilkan semua data pada table user. lalu fungsi die() di bawah
+ ini adalah fungsi php untuk menampilkan pesan error jika fungsi
+sebelumnya mengalami kesalahan. /*Membuat CRUD Dengan PHP Dan MySQL*/
+
+$query_mysql = mysql_query("SELECT * FROM user")or die(mysql_error());
+1
+	
+$query_mysql = mysql_query("SELECT * FROM user")or die(mysql_error());
+
+perintah query yang menampilkan data dari table user kita masukkan
+kedalam variabel $query_mysql. jadi sekarang variabel query_mysql di
+atas sudah berisi data user.
+
+Selanjutnya bagaimana cara menampilkan data nya?
+
+kita menggunakan perulangan while php
+<http://www.malasngoding.com/belajar-php-perulangan-while-pada-php/>.
+
+while($data = mysql_fetch_array($query_mysql)){ ?> <tr> <td><?php echo
+$nomor++; ?></td> <td><?php echo $data['nama']; ?></td> <td><?php echo
+$data['alamat']; ?></td> <td><?php echo $data['pekerjaan']; ?></td> <td>
+<a class="edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a> |
+<a class="hapus" href="hapus.php?id=<?php echo $data['id'];
+?>">Hapus</a> </td> </tr> <?php } ?>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+	
+while($data = mysql_fetch_array($query_mysql)){
+?>
+	<tr>
+		<td><?php echo $nomor++; ?></td>
+		<td><?php echo $data['nama']; ?></td>
+		<td><?php echo $data['alamat']; ?></td>
+		<td><?php echo $data['pekerjaan']; ?></td>
+		<td>
+			<a class="edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a> |
+			<a class="hapus" href="hapus.php?id=<?php echo $data['id']; ?>">Hapus</a>				
+		</td>
+	</tr>
+<?php } ?>
+
+pada fungsi while kita memecahkan data menjadi array dan memasukkannya
+ke dalam variabel data.agar data bisa kita tampilkan dalam bentuk
+perulagan. /*Membuat CRUD Dengan PHP Dan MySQL*/
+
+$data = mysql_fetch_array($query_mysql)
+1
+	
+$data = mysql_fetch_array($query_mysql)
+
+lalu menampilkan data nya tinggal
+
+<td><?php echo $data['nama']; ?></td> <td><?php echo $data['alamat'];
+?></td> <td><?php echo $data['pekerjaan']; ?></td>
+1
+2
+3
+	
+<td><?php echo $data['nama']; ?></td>
+<td><?php echo $data['alamat']; ?></td>
+<td><?php echo $data['pekerjaan']; ?></td>
+
+variabel data sudah menjadi array. dan masukkan nama column data yang
+ingin di tampilkan seperti contoh di atas. juga ada variabel nomor di
+atas. kenapa saya membuat variabel nomor dengan tanda plus ? karena di
+atas nilai $nomor=1. dan memberikan ++ di dalam while akan membuat nilai
+nomor bertambah terus menerus terus menerus sesuai jumlah record data
+yang di tampilkan. /*Membuat CRUD Dengan PHP Dan MySQL*/
+
+terakhir perhatikan pada link edit dan hapus berikut. ini untuk membuat
+link edit data dan hapus data. data di edit atau di hapus dengan
+menggunakan pengiriman data melalui url(GET). untuk memahami GET dan
+POST di PHP silahkan teman-teman baca tutorial saya sebelumnya tentang
+cara membuat pengiriman data di php
+<http://www.malasngoding.com/belajar-php-penanganan-form-pada-php/>.
+
+<a class="edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a> |
+<a class="hapus" href="hapus.php?id=<?php echo $data['id']; ?>">Hapus</a>
+1
+2
+	
+<a class="edit" href="edit.php?id=<?php echo $data['id']; ?>">Edit</a> |
+<a class="hapus" href="hapus.php?id=<?php echo $data['id']; ?>">Hapus</a>
+
+ 
+
+dan jangan lupa kita percantik tampilannya agar enak di pandang mata.
+
+style.css
+
+body{ font-family: 'roboto'; color: #000; } .judul{ background: #87D1D8;
+padding: 10px; text-align: center; } .judul h1,h2,h3{ height: 15px; } a{
+/*color: #fff;*/ padding: 5px; text-decoration: none; } .table{
+border-collapse: collapse; } table.table th th , table.table tr td{
+padding: 10px 20px ; }
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+	
+body{
+	font-family: 'roboto';
+	color: #000;
+}
+ 
+.judul{
+	background: #87D1D8;
+	padding: 10px;
+	text-align: center;
+ 
+}
+ 
+.judul h1,h2,h3{
+	height: 15px;
+}
+ 
+a{
+	/*color: #fff;*/
+	padding: 5px;
+	text-decoration: none;	
+}
+ 
+ 
+.table{
+	border-collapse: collapse;
+}
+ 
+table.table th th , table.table tr td{
+	padding: 10px 20px	;
+}
+
+Setelah penjelasan selesai langsung saja kita coba jalankan file
+index.php untuk melihat hasil menampilkan data dari database dengan
+php. /*Membuat CRUD Dengan PHP Dan MySQL*/
+
+Membuat CRUD Dengan PHP Dan MySQL - Menampilkan Data Dari Database
+
+Membuat CRUD Dengan PHP Dan MySQL – Menampilkan Data Dari Database
+
+Nah data pun berhasil kita tampilkan. Selesailah sudah
+/*tutorial Membuat CRUD Dengan PHP Dan MySQL – Menampilkan Data Dari
+Database*/. selanjutnya pada tutorial membut crud dengan php dan mysql
+part 2 akan kita bahas tentang membuat input data ke database dengan PHP
+pada tutorial selanjutnya.
+
+ 
+
+Tutorial CRUD PHP Lainnya :
+
+Tutorial CRUD Dengan PHP Dan MySQL Part 1 – Menampilkan Data Dari
+Database Dengan PHP
+<http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/>
+Tutorial CRUD Dengan PHP Dan MySQL Part 2 – Menginput Data Ke Database
+Dengan PHP
+<http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-input-data/>
+Tutorial CRUD Dengan PHP Dan MySQL Part 3 – Mengedit/Mengupdate Data
+Pada Database Dengan PHP
+<http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-edit-data/>
+Tutorial CRUD Dengan PHP Dan MySQL Part 4 – Menghapus Data Pada Database
+Dengan PHP
+<http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-hapus-data/>
+
+
+        Incoming search terms:
+
+  * crud php
+  * membuat crud
+  * cara membuat crud
+  * contoh crud php
+  * contoh crud
+  * cara membuat crud php
+  * belajar crud
+  * crud dengan php
+  * menampilkan data dari database dengan javascript
+  * crud di php
+
+
+
+  * SHARE :
+  * Facebook
+    <http://www.facebook.com/share.php?u=http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/>
+  * Twitter
+    <http://twitter.com/share?text=Membuat%20CRUD%20Dengan%20PHP%20Dan%20MySQL%20%E2%80%93%20Menampilkan%20Data%20Dari%20Database&url=http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/>
+  * Google+
+    <https://plusone.google.com/_/+1/confirm?url=http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/>
+  * LinkedIn
+    <http://www.linkedin.com/shareArticle?mini=true&url=http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/&title=Membuat%20CRUD%20Dengan%20PHP%20Dan%20MySQL%20%E2%80%93%20Menampilkan%20Data%20Dari%20Database>
+  * Digg
+    <http://digg.com/submit?url=http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/>
+  * StumbleUpon
+    <http://www.stumbleupon.com/submit?url=http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/&title=Membuat%20CRUD%20Dengan%20PHP%20Dan%20MySQL%20%E2%80%93%20Menampilkan%20Data%20Dari%20Database>
+
+
+
+Tags: cara menampilkan data dari database
+<http://www.malasngoding.com/tag/cara-menampilkan-data-dari-database/>,
+crud php mysql ajax
+<http://www.malasngoding.com/tag/crud-php-mysql-ajax/>, crud php mysql
+download <http://www.malasngoding.com/tag/crud-php-mysql-download/>,
+crud php mysql generator
+<http://www.malasngoding.com/tag/crud-php-mysql-generator/>, crud php
+mysql json <http://www.malasngoding.com/tag/crud-php-mysql-json/>, crud
+php mysql oop <http://www.malasngoding.com/tag/crud-php-mysql-oop/>,
+crud php mysql sample
+<http://www.malasngoding.com/tag/crud-php-mysql-sample/>, crud php mysql
+sederhana <http://www.malasngoding.com/tag/crud-php-mysql-sederhana/>,
+crud php mysql tutorial
+<http://www.malasngoding.com/tag/crud-php-mysql-tutorial/>, download
+source code crud php dan mysql
+<http://www.malasngoding.com/tag/download-source-code-crud-php-dan-mysql/>,
+kegunaan mysql_query()
+<http://www.malasngoding.com/tag/kegunaan-mysql_query/>, koneksi php dan
+mysql <http://www.malasngoding.com/tag/koneksi-php-dan-mysql/>,
+menampilkan data dari database dengan codeigniter
+<http://www.malasngoding.com/tag/menampilkan-data-dari-database-dengan-codeigniter/>,
+menampilkan data dari database dengan javascript
+<http://www.malasngoding.com/tag/menampilkan-data-dari-database-dengan-javascript/>,
+menampilkan data dari database dengan php combobox
+<http://www.malasngoding.com/tag/menampilkan-data-dari-database-dengan-php-combobox/>,
+menampilkan data dari database di php
+<http://www.malasngoding.com/tag/menampilkan-data-dari-database-di-php/>, menampilkan
+data dari database ke combobox delphi
+<http://www.malasngoding.com/tag/menampilkan-data-dari-database-ke-combobox-delphi/>,
+menampilkan data dari database ke jtable
+<http://www.malasngoding.com/tag/menampilkan-data-dari-database-ke-jtable/>,
+menampilkan data dari database ke textbox php
+<http://www.malasngoding.com/tag/menampilkan-data-dari-database-ke-textbox-php/>,
+menampilkan data dari database tanpa refresh
+<http://www.malasngoding.com/tag/menampilkan-data-dari-database-tanpa-refresh/>,
+menjalankan perintah mysql di php
+<http://www.malasngoding.com/tag/menjalankan-perintah-mysql-di-php/>,
+mysql_query() <http://www.malasngoding.com/tag/mysql_query/>, pengertian
+CRUD <http://www.malasngoding.com/tag/pengertian-crud/>
+
+
+            About the author////
+
+  * //
+
+    <https://twitter.com/dikialfarabi>
+  * //
+
+    <https://www.facebook.com/dickyalfarabi>
+
+
+            Diki Alfarabi Hadi
+
+Coding enthusiast. Someone who love learn something new. especially
+about web programming and web design. happy to share about knowledge and
+learn from other.
+
+  * Author profile <http://www.malasngoding.com/author/admin/>
+  * All posts by Diki Alfarabi Hadi
+    <http://www.malasngoding.com/author/admin/>
+  * <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/>
+
+
+<http://shop.malasngoding.com/>
+
+
+            Discussion//
+
+  * 11 Comments
+
+  *
+    Membuat CRUD Dengan PHP Dan MySQL Input Data part 2 <#> 1 year ago
+
+    […] dengan PHP. pada tutorial sebelumnya di
+    http://www.malasngoding.com <http://www.malasngoding.com/> kita
+    telah membahas tentang tutorial cara menampilkan data dari database.
+    maka pada tutorial ini saya akan menjelaskan tentang cara membuat
+    insert/input data ke […]
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=270#respond>
+
+  *
+    Membuat CRUD Dengan PHP Dan MySQL Edit Data – Malas Ngoding <#> 1
+    year ago
+
+    […] – Pada tutorial membuat crud dengan php dan mysql sebelumnya
+    kita telah membahas tentang cara menampilkan data dari database dan
+    cara menginput data ke database dengan php. sekarang di tutorial
+    membuat CRUD dengan php dan […]
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=275#respond>
+
+  *
+    Membuat CRUD Dengan PHP Dan MySQL Hapus Data – Malas Ngoding <#> 1
+    year ago
+
+    […] Hapus Data – setelah sebelumnya kita belajar tentang cara
+    membuat dengan php dan mysql. yaitu cara menampilkan data dari
+    database, cara menginput data ke database dengan php, dan cara
+    mengedit data pada database. dan sekarang […]
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=276#respond>
+
+  *
+    Free Download Source Code CRUD PHP Dan MySQL – Malas Ngoding <#> 1
+    year ago
+
+    […] source code CRUD dengan php dan myqsl. source code ini adalah
+    hasil tutorial sebelumnya tentang membuat crud dengan php dan mysql.
+    oleh sebab itu source code nya juga saya bagikan saja secara gratis
+    biar lebih memudahkan […]
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=284#respond>
+
+  *
+    Cara Membuat Blog Di Wordpress Gratis Mudah – Malas Ngoding <#> 1
+    year ago
+
+    […] jika teman-teman ingin membuat aplikasi atau CMS sendiri
+    teman-teman harus menguasai HTML, CSS, PHP dan bahasa pemrograman
+    web lainnya. terima kasih sudah menyempatkan waktu belajar membuat
+    blog di […]
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=305#respond>
+
+  *
+    Membuat Animasi Loading Dengan CSS3 – Malas Ngoding <#> 1 year ago
+
+    […] di reload. dan ada juga yang menempatkan animasi loading untuk
+    animasi ajax. misalnya kita ingin menampilkan data dari
+    database dengan menggunakan bantuan ajax jquery, kita bisa
+    memberikan efek loading di bagian data yang di […]
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=317#respond>
+
+  *
+    Input Data Ke Database Tanpa Reload Dengan Ajax JQuery <#> 1 year ago
+
+    […] Menampilkan data dari database dengan PHP dan MySQL […]
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=387#respond>
+
+  *
+    Membuat CRUD Dengan OOP PHP Dan MySQL – Malas Ngoding <#> 1 year ago
+
+    […] Sebelumnya di http://www.malasngoding.com
+    <http://www.malasngoding.com/> saya juga sudah menjelaskan tentang
+    cara membuat crud dengan php dan mysql. tetapi cara membuat crud
+    sebelumya menggunakan teknik atau konsep struktural. beda dengan
+    tutorial ini. di tutorial ini kita akan membuat crud dengan php dan
+    mysql menggunakan konsep OOP. baca : Membuat CRUD Dengan PHP Dan
+    MySQL. […]
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=431#respond>
+
+  *
+    Membuat CRUD Dengan OOP PHP Dan MySQL Part 4 – Malas Ngoding <#> 1
+    year ago
+
+    […] dan membuat form edit yang action nya kita arahkan ke file
+    proses.php dengan mengirimkan parameter aksi nya berisi update.
+    menggunakan method post. saya tidak jelaskan secara rinci lagi.
+    karena saya rasa sama seperti penjelasan membuat CRUD yang sudah
+    saya jelaskan pada tutorial sebelumnya tentang membuat crud dengan
+    php dan mysql secara struktural. […]
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=437#respond>
+
+  *
+    Download Source Code CRUD PHP Dengan Konsep OOP – Malas Ngoding <#>
+    1 year ago
+
+    […] Membuat CRUD Dengan PHP Dan MySQL – Menampilkan data dari
+    database […]
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=439#respond>
+
+  *
+    faisal Kharie <#> 2 days ago
+
+    sangat bermanfaat ilmunya agan, semoga berguna bagi yang
+    membutuhkannya 🙂
+
+      o //  Reply
+        <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/?replytocom=5911#respond>
+
+------------------------------------------------------------------------
+
+
+      Write a Comment Cancel reply
+      <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/#respond>
+
+Your email address will not be published. Required fields are marked *
+
+Comment
+
+Name *
+
+Email *
+
+Website
+
+
+        Tutorial PHP Dasar
+
+  * #1. Pengenalan PHP
+    <http://www.malasngoding.com/belajar-php-dasar-pengenalan-dan-kegunaan-php/>
+
+  * #2. Instalasi Web Server
+    <http://www.malasngoding.com/belajar-php-instalasi-web-server-di-windows/>
+
+  * #3. PHP Dasar
+    <http://www.malasngoding.com/belajar-php-dasar-untuk-pemula/>
+  * #4. Variabel PHP
+    <http://www.malasngoding.com/belajar-php-mengenal-variabel-di-php/>
+  * #5. Tipe Data PHP
+    <http://www.malasngoding.com/belajar-php-tipe-data-pada-php/>
+  * #6. String PHP
+    <http://www.malasngoding.com/belajar-php-manipulasi-string-pada-php/>
+  * #7. If Else PHP
+    <http://www.malasngoding.com/belajar-php-kondisi-if-else-pada-php/>
+  * #8. Function PHP
+    <http://www.malasngoding.com/belajar-php-mengenal-function-pada-php/>
+  * #9. Switch Case PHP
+    <http://www.malasngoding.com/belajar-php-penggunaan-switch-case-pada-php/>
+
+  * #10. While PHP
+    <http://www.malasngoding.com/belajar-php-perulangan-while-pada-php/>
+  * #11. For PHP
+    <http://www.malasngoding.com/belajar-php-perulangan-for-pada-php/>
+  * #12. Array PHP
+    <http://www.malasngoding.com/belajar-php-mengenal-array-pada-php/>
+  * #13. Tanggal PHP
+    <http://www.malasngoding.com/belajar-php-menampilkan-tanggal-pada-php/>
+  * #14. Include dan Required
+    <http://www.malasngoding.com/belajar-php-mengenal-include-dan-require-pada-php/>
+
+  * #15. Form Handling PHP
+    <http://www.malasngoding.com/belajar-php-penanganan-form-pada-php/>
+  * #16. Operator Aritmatika PHP
+    <http://www.malasngoding.com/belajar-php-operator-aritmatika-di-php/>
+  * #17. Foreach PHP
+    <http://www.malasngoding.com/belajar-php-pengertian-dan-pengenalan-foreach/>
+
+  * #18. Format Nomor PHP
+    <http://www.malasngoding.com/belajar-php-pengertian-dan-pengenalan-foreach/>
+
+  * #19. Explode dan Implode PHP
+    <http://www.malasngoding.com/mengenal-fungsi-explode-dan-implode-pada-php/>
+
+
+
+        Tutorial PHP Lanjutan
+
+  * #1. File Exist PHP
+    <http://www.malasngoding.com/memeriksa-ketersediaan-file-dengan-php/>
+  * #2. Mkdir dan Rmdir
+    <http://www.malasngoding.com/cara-membuat-dan-menghapus-folder-dengan-php/>
+
+  * #3. Base64 PHP
+    <http://www.malasngoding.com/pengertian-dan-cara-membuat-base64-pada-php/>
+
+  * #4. Membuat Kalkulator
+    <http://www.malasngoding.com/membuat-kalkulator-sederhana-dengan-php/>
+  * #5. Halaman Web Dinamis
+    <http://www.malasngoding.com/membuat-halaman-web-dinamis-dengan-php/>
+  * #6. Koneksi PHP dan MySQL
+    <http://www.malasngoding.com/cara-membuat-koneksi-php-dengan-database-mysql/>
+
+  * #7. Login PHP
+    <http://www.malasngoding.com/membuat-form-login-dengan-php-dan-mysql/>
+  * #8. Captcha PHP
+    <http://www.malasngoding.com/cara-membuat-captcha-dengan-php/>
+  * #9. Upload File
+    <http://www.malasngoding.com/membuat-upload-file-dengan-php-dan-mysql/>
+  * #10. Form Validation PHP
+    <http://www.malasngoding.com/cara-membuat-form-validasi-dengan-php/>
+  * #11. Pagination / Penomoran Halaman
+    <http://www.malasngoding.com/membuat-paging-dengan-php-dan-mysql/>
+  * #12. PHP Lanjutan Lainnya <http://www.malasngoding.com/category/php>
+
+
+        Tutorial PHP CRUD
+
+  * #1. Menampilkan Data Dari Database
+    <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-menampilkan-data-dari-database/>
+
+  * #2. Input Data Ke Database
+    <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-input-data/>
+
+  * #3. Edit Data
+    <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-edit-data/>
+
+  * #4. Hapus Data
+    <http://www.malasngoding.com/membuat-crud-dengan-php-dan-mysql-hapus-data/>
+
+
+
+        Tutorial PHP OOP
+
+  * #1. Pengenalan OOP PHP
+    <http://www.malasngoding.com/pengertian-dan-pengenalan-oop-pada-php/>
+  * #2. Class, Object, Property dan Method
+    <http://www.malasngoding.com/php-oop-part-2-pengertian-class-object-property-dan-method/>
+
+  * #3. Construct dan Destruct
+    <http://www.malasngoding.com/php-oop-pengenalan-construct-dan-destruct-pada-oop-php/>
+
+  * #4. Enkapsulasi
+    <http://www.malasngoding.com/php-oop-part-4-pengertian-enkapsulasi-public-private-protected/>
+
+  * #5. Inheritance
+    <http://www.malasngoding.com/php-oop-pewarisan-sifat-inheritance-pada-oop-php/>
+
+  * #6. CRUD OOP PHP
+    <http://www.malasngoding.com/membuat-crud-dengan-oop-php-dan-mysql/>
+  * #7. PHP Lanjutan Lainnya <http://www.malasngoding.com/category/php>
+
+<http://www.malasngoding.com/pasang-iklan-murah-di-www-malasngoding-com/>
+
+<https://goo.gl/KI6WUd>
+
+Hosting Unlimited Indonesia
+
+<https://goo.gl/VawV1f>
+
+
+        Produk
+
+  * dvd tutorial belajar menguasai framework codeigniter	DVD Tutorial
+    Belajar Menguasai Framework CodeIgniter
+    <http://www.malasngoding.com/product/dvd-tutorial-belajar-menguasai-framework-codeigniter/>
+    Rp 90,000
+  * dvd tutorial analisa dan development website ecommerce	DVD Tutorial
+    Analisa Dan Development Website E-Commerce
+    <http://www.malasngoding.com/product/dvd-tutorial-analisa-dan-development-website-e-commerce/>
+    Rp 135,000
+  * membangun layanan sms online berbasis client server	DVD Tutorial
+    Membangun Layanan SMS Online Berbasis Client Server
+    <http://www.malasngoding.com/product/dvd-tutorial-membangun-layanan-sms-online-berbasis-client-server/>
+    Rp 145,000
+  * DVD Seminggu Menguasai PHP dan MySQL Untuk Pemula	DVD Seminggu
+    Menguasai PHP dan MySQL Untuk Pemula
+    <http://www.malasngoding.com/product/dvd-seminggu-menguasai-php-dan-mysql-untuk-pemula/>
+    Rp 80,000
+
+
+        Tutorial Terbaru
+
+  * Membuat Game Snake Dengan HTML5 dan JQuery
+    <http://www.malasngoding.com/membuat-game-snake-dengan-html5-dan-jquery/>
+    May 14, 2017
+  * Membuat Template Web Responsive Dengan HTML dan CSS
+    <http://www.malasngoding.com/membuat-template-web-responsive-dengan-html-dan-css/>
+    May 10, 2017
+  * Membuat Login Dengan PHP dan MySQL MD5
+    <http://www.malasngoding.com/membuat-login-dengan-php-dan-mysql-md5/> May
+    5, 2017
+  * Membuat Form Validasi dengan Javascript
+    <http://www.malasngoding.com/membuat-form-validasi-dengan-javascript/>
+    May 4, 2017
+  * Pengertian, Penggunaan dan Cara Membuat MD5 Pada PHP
+    <http://www.malasngoding.com/pengertian-penggunaan-dan-cara-membuat-md5-pada-php/>
+    May 3, 2017
+
+
+        Social
+
+
+
+
+
+        Toko MalasNgoding.com di
+
+<https://www.bukalapak.com/tutorialpemrograman>
+<https://www.tokopedia.com/malasngoding>
+×
+
+
+      Penawaran menarik !
+
+
+  Waktunya upgrade skill !
+
+
+            Waktunya upgrade skill mu dengan mempelajari framework PHP!
+
+            *DVD Tutorial menguasai codeigniter* berisi tutorial
+            codeigniter jelas dan lengkap.
+            Karena di jelaskan oleh author berpengalaman.
+
+            Dan dapatkan bonus menarik dengan membeli produk ini dari
+            www.malasngoding.com.
+
+
+          Jangan sampai telat… !!
+
+Jangan tampilkan lagi untuk hari ini. Ok, Ayo kita lihat!
+<http://www.malasngoding.com/product/dvd-tutorial-belajar-menguasai-framework-codeigniter/>
+
+
+  * //
+
+© 2017. www.malasngoding.com <#>. All right reserved.
+
+  * CARA PEMESANAN
+
+    <http://www.malasngoding.com/cara-pemesanan-produk/>
+  * IKLAN
+
+    <http://www.malasngoding.com/pasang-iklan-murah-di-www-malasngoding-com/>
+  * KONTAK
+
+    <http://www.malasngoding.com/kontak/>
+
+		
+	
+	
+	
+	
+	
+
+	
+

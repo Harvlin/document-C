@@ -1,10 +1,11 @@
 #include<stdio.h>
 #include<stdbool.h>
+#include<math.h>
 bool isPrime (int num){
 	if (num <= 1)
 		return false;
-	for (int i = 2; i * i <= num; i++) {
-		if (num %i == 0) {
+	for (int i = 3; i < sqrt(num); i++) {
+		if (num % i == 0) {
 			return false;
 		}
 	}
@@ -12,13 +13,11 @@ bool isPrime (int num){
 }
 int main()
 {
-	int bil;
-	printf("Masukkan angka: ");scanf(" %d", &bil);
+	int bil; scanf(" %d", &bil);
 	if (isPrime(bil)) {
-		printf("Prima");
+		printf("YA");
 	} else {
-		printf("Bukan prima");
+		printf("BUKAN");
 	}
-		
  	return 0;
 }
