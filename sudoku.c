@@ -10,7 +10,7 @@ int main()
 		printf("Input harus merupakan bilangan bulat ganjil");
 		return 1;
 	} 
-	int matrix [n] [n];
+	int matrix[n][n];
 	
 	// inisiasi matriks dengan nol
 	for (int i = 0; i < n; i++) {
