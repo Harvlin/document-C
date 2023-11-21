@@ -20,37 +20,25 @@ int main()
 		}
 	}
 	
-	int num = 1;
+	int num;
 	int row = 0, col = n / 2;
-	
-	while (num <= n * n) {
+	for (num = 1; num <= n * n; num++) 
+	{
 		matrix[row][col] = num;
-		printf("[%d][%d] = %d\n", row, col, matrix[row][col]);
-		delay();
-		// posisi berikutnya (atas - kiri)
-		int next_row = (row - 1 + n) % n;
-		int next_col = (col - 1 + n) % n;
 		
+		row = (row - 1 + n) % n;
+		col = (col - 1 + n) % n;
 		
-		if (matrix[next_row][next_col] == 0) {
-			// jika selanjutnya belum diisi, pindah ke sana
-			row = next_row;
-			col = next_col;
-		} else {
-			// jika selanjutnya sudah diisi, pundah ke bawah
+		if (matrix[row][col] != 0) {
 			row = (row + 1) % n;
 		}
-		num ++;
 	}
-	printf("\nMatrix %d x %d: \n", n, n);
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
-			printf("%3d ", matrix[i][j]);
+			printf("%6d", matrix[i][j]);
 		}
 		printf("\n");
 	}
- 	return 0;
 }
-void delay() {
-	for (int x = 1; x < 100000000; x++);
-}
+	
+	            
