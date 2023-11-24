@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include<string.h>
-void swap(char *x, char *y)
+void swap(char x, char y)
 {
-	char temp = *x;
-	*x = *y;
-	*y = temp;
+	char temp = x;
+	x = y;
+	y = temp;
 }
-void permute(char *str, int left, int right)
+void permute(char str, int left, int right)
 {
 	if (left == right)
 		printf("%s\n", str);
