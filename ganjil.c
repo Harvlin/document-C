@@ -1,7 +1,6 @@
 #include<stdio.h>
 
-void f(int);	
-int a[100];
+void f(int);
 int main()
 {
 	f(8);
