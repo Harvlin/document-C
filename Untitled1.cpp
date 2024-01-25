@@ -1,17 +1,13 @@
 #include<stdio.h>
 int main()
 {
-	static int a[5][5];
-	
-	a[1][2] = 1;
-	
-	for (int i = 0; i <=4; i++)
-	{
-		for (int j = 0; j <= 4; j++)
-		{
-			printf("%3d", a[i][j]);
+	for (int i = 1; i <= 2; i++) {
+		for (int j = 1; j <= 2; j++) {
+			for (int k = 1; k <= 2; k++) {
+				printf("*\n");
+			}
 		}
-		printf("\n");
 	}
+	
  	return 0;
 }

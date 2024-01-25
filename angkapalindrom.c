@@ -10,7 +10,7 @@ int isNumberPalindrome(int num) {
     return (original == reversed);
 }
 int main() {
-    int number; scanf("%d", &number);
+    int number; printf(">> "); scanf("%d", &number);
     if (isNumberPalindrome(number))
         printf("Iya");
     else
