@@ -5,8 +5,8 @@ int main()
 {
 	srand(time(NULL));
 	int n;
-	for (int i = 1; i < 10; i++) {
-		n = rand();	
+	for (int i = 1; i < 20; i++) {
+		n = rand() & 6;	
 		printf("n = %d\n", n);
 	}
  	return 0;

@@ -1,6 +1,11 @@
 {
       "files.associations": {
             "stdbool.h": "c",
-            "stdio.h": "c"
-      }
+            "stdio.h": "c",
+            "iostream": "cpp",
+            "ostream": "cpp",
+            "utility": "cpp",
+            "vector": "cpp"
+      },
+      "C_Cpp.errorSquiggles": "disabled"
 }
