@@ -4,17 +4,14 @@ int kpk(int a, int b);
 
 int fpb(int a, int b) {
       while (b != 0) {
-            int temp = b;
-            b = a % b;
-            a = temp;
+            int temp = b; 
+            b = a % b; 
+            a = temp;  
       }
       return a;
 }
 
 int kpk(int a, int b) {
-      // KPK * FPB = a *b
-      // KPK = (a * b) / FPB
-
       int FPB = fpb(a, b);
       int kpk = (a * b) / FPB;
       return kpk;

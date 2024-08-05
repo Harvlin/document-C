@@ -1,11 +1,3 @@
-/*
-palindrom
-Vector
-Map
-toh
-isALldigit
-permutasi
-*/
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -33,7 +25,7 @@ int main(void) {
       while (T--) {
             int N, M;
             string idPeserta;
-            cin >> N /*3*/ >> M /*1*/ >> idPeserta;
+            cin >> N  >> M >> idPeserta;
 
             vector<Peserta> peserta(N);
             for (int i = 0; i < N; i++) {

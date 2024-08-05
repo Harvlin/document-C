@@ -1,39 +1,42 @@
 #include<iostream>
-#include<map>
 #include<vector>
+#include<map>
 using namespace std;
-int main(void) {
-      map<string, int> studentScores;
-      char continueInput = 'y';
-      while (continueInput == 'y' || continueInput == 'Y') {
-            string name;
-            int score;
+int main() {
+      vector <string> namaSiswa;
+      map<string, int> nilai;
+      string nama;
+      int nilaiSiswa;
 
-            cout << "Enter student name: ";
-            getline(cin, name);
+      cin >> nama;
+      cin >> nilaiSiswa;
+      namaSiswa.push_back(nama);
+      nilai[nama] = nilaiSiswa; 
 
-            cout << "Enter student score: ";
-            cin >> score;
-            
-            //Pengisian studentScore map
-            studentScores[name]  = score;
+      cin >> nama;
+      cin >> nilaiSiswa;
+      namaSiswa.push_back(nama);
+      nilai[nama] = nilaiSiswa; 
 
-            cout << "Continue: ";
-            cin >> continueInput;
+      cin >> nama;
+      cin >> nilaiSiswa;
+      namaSiswa.push_back(nama);
+      nilai[nama] = nilaiSiswa; 
 
-            cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), "\n");
+      for (const auto& pair : namaSiswa) {
+            cout << pair << " ";
       }
-
-      for (const auto& pair : studentScores) {
-            cout << pair.first << pair.second  << endl;
+      cout << endl;
+      for (const auto& pair : nilai) {
+            cout << pair.first << " ";
       }
-      vector <string> names;
-      for (const auto& pair : studentScores) {
-            names.push_back(pair.first);
+      cout << endl;
+      for (const auto& pair : nilai) {
+            cout << pair.second << " ";
       }
-      for (const auto& pair : names)  {
-            cout << names << endl;
+      cout << endl;
+      for (const auto& pair : namaSiswa) {
+            cout << "Nama: " << pair << " Nilai: " << nilai[pair] << "\n";
       }
       return 0;
 }
