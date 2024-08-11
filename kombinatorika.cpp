@@ -9,6 +9,6 @@ long long kombinatorika(int n, int k) {
     return faktorial(n) / (faktorial(k) * faktorial(n - k));
 }
 int main() {
-    cout << combination(6, 2);
+    cout << kombinatorika(6, 2);
     return 0;
 }

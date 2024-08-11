@@ -26,15 +26,15 @@ int main() {
       for (const auto& pair : namaSiswa) {
             cout << pair << " ";
       }
-      cout << endl;
+      cout << endl << endl;
       for (const auto& pair : nilai) {
             cout << pair.first << " ";
       }
-      cout << endl;
+      cout << endl << endl;
       for (const auto& pair : nilai) {
             cout << pair.second << " ";
       }
-      cout << endl;
+      cout << endl << endl;
       for (const auto& pair : namaSiswa) {
             cout << "Nama: " << pair << " Nilai: " << nilai[pair] << "\n";
       }
