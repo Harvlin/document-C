@@ -26,8 +26,7 @@ int main() {
     cout << endl << endl;
 
     for (int i = 1; i <= 6; i++) {
-        cout << i << " kali " << JM[i];
-        cout << "   " << (double)JM[i] / q * 100.0 << "% Kemungkinan" << endl;
+        cout << i << " sebanyak " << JM[i] << " kali " << (double)JM[i] / q * 100.0 << "% Kemungkinan" << endl;
     }
 
     return 0;

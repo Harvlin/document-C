@@ -43,5 +43,9 @@ int main()
 		}
 		printf("\n");
 	}
+	
+	void delay() {
+		this_thread::sleep_for(chrono::miliseconds(500));
+	}
 	return 0;
 }
