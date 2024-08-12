@@ -13,14 +13,12 @@ int main() {
 
     srand(time(0));
 
-    vector<int> JM(7, 0); 
-    vector<int> QUAN;
+    vector<int> JM(7, 0);
 
     for (int i = 0; i < q; i++) {
         b = rand() % 6 + 1;
-        QUAN.push_back(b);
         JM[b]++;
-        cout << "Lemparan ke " << i + 1 << " muncul " << QUAN[i] << endl;
+        cout << "Lemparan ke " << i + 1 << " muncul " << b << endl;
     }
     
     cout << endl << endl;
