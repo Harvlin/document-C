@@ -19,6 +19,7 @@ int main() {
         int j = rand() % (jumlahOrang - i); /* memasukkan nomor random yang lebih kecil dari jumlah orang ke dalam j, 
                                                jumlah orang selalu dikurang agar angka yang sudah dimasukkan tidak diulang kembali*/
         
+        // proses mengacak urutan
         int temp = bilangan[j];
         bilangan[j] = bilangan[i];
         bilangan[i] = temp;
