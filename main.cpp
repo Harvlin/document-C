@@ -1,46 +1,60 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
 using namespace std;
+
 struct Peserta {
-      string id;
-      int nilaiSesi1;
-      int nilaiSesi2;
-      int nilaiSesi3;
+    string id;
+    int nilaiSesi1;
+    int nilaiSesi2;
+    int nilaiSesi3;
 };
-bool comparePeserta (Peserta a, Peserta b) {
-      if (a.nilaiSesi3 != b.nilaiSesi3) {
-            return a.nilaiSesi3 > b.nilaiSesi3;
-      }
 
-      if (a.nilaiSesi2 != b.nilaiSesi2) {
-            return a.nilaiSesi2 > b.nilaiSesi2;
-      }
-
-      return a.nilaiSesi1 > b.nilaiSesi1;
+bool comparePeserta(const Peserta& a, const Peserta& b) {
+    if (a.nilaiSesi3 != b.nilaiSesi3) {
+        return a.nilaiSesi3 > b.nilaiSesi3;
+    }
+    if (a.nilaiSesi2 != b.nilaiSesi2) {
+        return a.nilaiSesi2 > b.nilaiSesi2;
+    }
+    return a.nilaiSesi1 > b.nilaiSesi1;
 }
-int main(void) {
-      int T;
-      cin >> T;
-      while (T--) {
-            int N, M;
-            string idPeserta;
-            cin >> N  >> M >> idPeserta;
 
-            vector<Peserta> peserta(N);
-            for (int i = 0; i < N; i++) {
-                  cin >> peserta[i].id >> peserta[i].nilaiSesi1 >> peserta[i].nilaiSesi2 >> peserta[i].nilaiSesi3;
+int main() {
+    int jumlahKasus;
+    
+    cout << "Masukkan jumlah kasus: ";
+    cin >> jumlahKasus;
+
+    while (jumlahKasus--) {
+        int jumlahPeserta, jumlahLulus;
+        string idPesertaDicari;
+
+        cout << "Masukkan jumlah peserta, jumlah yang lulus, dan ID peserta yang dicari: ";
+        cin >> jumlahPeserta >> jumlahLulus >> idPesertaDicari;
+
+        vector<Peserta> daftarPeserta(jumlahPeserta);
+
+        cout << "Masukkan ID peserta dan nilai untuk setiap sesi:" << endl;
+        for (auto& peserta : daftarPeserta) {
+            cout << "ID dan nilai (sesi 1, sesi 2, sesi 3) untuk peserta: ";
+            cin >> peserta.id >> peserta.nilaiSesi1 >> peserta.nilaiSesi2 >> peserta.nilaiSesi3;
+        }
+
+        sort(daftarPeserta.begin(), daftarPeserta.end(), comparePeserta);
+
+        bool lulus = false;
+        for (int i = 0; i < jumlahLulus && !lulus; ++i) {
+            if (daftarPeserta[i].id == idPesertaDicari) {
+                lulus = true;
             }
+        }
 
-            sort(peserta.begin(), peserta.end(), comparePeserta);
+        // Menampilkan hasil apakah peserta lulus atau tidak
+        cout << "Hasil: Peserta dengan ID " << idPesertaDicari << " " 
+             << (lulus ? "lulus." : "tidak lulus.") << endl;
+    }
 
-            bool lulus = false;
-            for (int i = 0; i < M && !lulus; i++) {
-                  if (peserta[i].id == idPeserta) {
-                        lulus = true;
-                  }
-            }
-            cout << (lulus ? "YA" : "TIDAK") << endl;
-      }
-      return 0;
+    return 0;
 }

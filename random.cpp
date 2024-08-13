@@ -7,16 +7,17 @@ int main() {
     cout << "Jumlah orang: "; cin >> jumlahOrang;
     cout << "Jumlah orang dalam kelompok: "; cin >> anggotaKelompok;
     
-    int bilangan[jumlahOrang];
+    int bilangan[jumlahOrang]; // buat array bernama bilangan sebanyak jumlah orang
     
     for (int i = 0; i < jumlahOrang; i++) {
-        bilangan[i] = i + 1;
+        bilangan[i] = i + 1; // memasukkan orang ke dalam array bilangan
     }
     
     srand(time(0));
     
     for (int i = 0; i < jumlahOrang; i++) {
-        int j = rand() % (jumlahOrang - i);
+        int j = rand() % (jumlahOrang - i); /* memasukkan nomor random yang lebih kecil dari jumlah orang ke dalam j, 
+                                               jumlah orang selalu dikurang agar angka yang sudah dimasukkan tidak diulang kembali*/
         
         int temp = bilangan[j];
         bilangan[j] = bilangan[i];
@@ -31,6 +32,5 @@ int main() {
             cout << "\nKelompok ke: " << ++nokel << ": ";
         }
     }
-    
     return 0;
 }
