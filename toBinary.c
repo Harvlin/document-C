@@ -23,7 +23,7 @@ int pemangkatan(int n, int pangkat)
 }
 int main()
 {
-	int n = 3, pangkat = 0;
+	int n = 3, pangkat = 2;
 	printf("%d", pemangkatan(n, pangkat));
  	return 0;
 }
