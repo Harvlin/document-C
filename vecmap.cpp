@@ -13,16 +13,6 @@ int main() {
       namaSiswa.push_back(nama);
       nilai[nama] = nilaiSiswa; 
 
-      cin >> nama;
-      cin >> nilaiSiswa;
-      namaSiswa.push_back(nama);
-      nilai[nama] = nilaiSiswa; 
-
-      cin >> nama;
-      cin >> nilaiSiswa;
-      namaSiswa.push_back(nama);
-      nilai[nama] = nilaiSiswa; 
-
       for (const auto& pair : namaSiswa) {
             cout << pair << " ";
       }
@@ -36,7 +26,7 @@ int main() {
       }
       cout << endl << endl;
       for (const auto& pair : namaSiswa) {
-            cout << "Nama: " << pair << " Nilai: " << nilai[pair] << "\n";
+            cout << "Nama: " << pair << " Nilai: " << nilai[pair] << "\n"; // nama dari vector dan nilai dari map
       }
       return 0;
 }

@@ -1,20 +1,25 @@
 #include<bits/stdc++.h>
 using namespace std;
 /*
-Binary search .
-insertion sort .
+Binary search ...
+insertion sort ...
 Sudoku
 8queens
-binary search 2d
+knight
+penjumlahan string
+uang
+soal palindrom .
+binary search 2d .
 thousand number separator
 divide and qonquer .
-fibo .
-find & sort .
-fpb kpk .
+fibo ..
+find & sort ..
+fpb kpk ..
 Kombinatorika
 pascalTriangle
 Toh
 */
+
 
 int main(void) {
       

@@ -1,133 +1,56 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
-const int max = 100;
-bool validMove[6][6] = {{false, false, true, true, true, false},
-						{false, false, false, true, true, true},
-						{true, false, false, false, true, false},
-						{true, true, false, false, false, true},
-						{true, true, true, false, false, false},
-						{false, true, false, true, false, false}};
-int A, B, C, Ax, Bx, i;
-int Gerak[max];
-int Buffer[max];
-int minimum;
-int jumlah;
-bool sukses;
 
-void doProcess(int g) {
-	int j;
-	if (jumlah > max || sukses) {
-		exit();
-	}
-	jumlah ++;
-	Gerak[jumlah] = g;
-	switch(g) {
-		case 1:
-			if (Ax == 0 && Bx != B) {
-				Ax = a;
-			} else {
-				break;
-			}
-		case 2:
-			if (Ax == A && Bx > 0) {
-				Ax = 0;
-			} else {
-				break;
-			}
-		case 3:
-			if (Ax > 0) {
-				Bx = Bx + Ax;
-				if (Bx > B) {
-					Ax = Bx - B;
-					Bx = B;
-				}
-			} else {
-				break;
-			}
-		case 4:
-			if (Bx == 0 && Ax != A) {
-				Bx = B;
-			} else {
-				break;
-			}
-		case 5:
-			if (Bx == B && Ax > 0) {
-				Bx = 0;
-			} else {
-				break;
-			}
-		case 6:
-			if (Bx > 0) {
-				Ax = Ax + Bx;
-				if (Ax > A) {
-					Bx = Ax - A;
-					Ax = A;
-				} else {
-					Bx = 0;
-				}
-			} else {
-				break;
-			}
-	}
-	if (Ax == C || Bx == c) {
-		Sukses = true;
-	} else if (Ax < A || Bx < B) {
-		for (int j = 0; j < 6; j++) {
-			if (validMove(g, j)) {
-				doProcess(j);
-				if (!Sukses) {
-					jumlah--;
-				}
-			}
-		}
+void cetakLangkah(const vector<string> &langkah) {
+	for (const string &l : langkah) {
+		cout << l << endl;
 	}
 }
-int main() {
-	A = 5;
-	B = 3;
-	C = 4;
-	Minimum = Max;
+
+void dapatkanTakaranAir() {
+	int A = 0, B = 0;
+	vector<string> langkah;
 	
-	int i = 1;
-	while (i <= 6) {
-		Ax = 0;
-		Bx = 0;
-		jumlah = 0;
-		Sukses = false;
-		doProcess(i);
-		if (Sukses && Minimum > jumlah) {
-			Minimum = jumlah;
-			for (int i = 0; i < max; i++) {
-				Buffer[i] = Gerak[i];
-			}
-		}
-		i++;
-	}
-	if (Minimum == Max) {
-		cout << "Gagal";
-	} else {
-		for (int i = 0; i < Minimum; i++) {
-			switch(Buffer[i]) {
-				case 1:
-					cout << "Isi A";
-					break;
-				case 2:
-					cout << "Buang A";
-					break;
-				case 3:
-					cout << "Pindah A ke B";
-					break;
-				case 4:
-					cout << "Isi B";
-					break;
-				case 5:
-					cout << "Buang B";
-					break;
-				case 6:
-					cout << "Pindah B ke A";
-					break;
-			}
-		}
-	}
+	A = 5;
+	langkah.push_back("Isi botol A sampai penuh (5 liter)");
+	
+	B = 3;
+	A = 2;
+	langkah.push_back("Pindahkan isi botol A ke botol B (3 liter)");
+	
+	B = 0;
+	langkah.push_back("Buang seluruh isi botol B");
+	
+	B = 2;
+	A = 0;
+	langkah.push_back("Pindahkan sisa isi botol A ke botol B");
+	
+	A = 5;
+	langkah.push_back("Isi botol A sampai penuh (5 liter)");
+	
+	A = 4;
+	B = 3;
+	langkah.push_back("Pindahkan isi botol A ke botol B sampai penuh");
+	
+	langkah.push_back("Hasil: Botol A berisi 4 liter air");
+	cetaklangkah(langkah);
+}
+
+int main() {
+	dapatkanTakaranAir();
 	return 0;
 }
+/*
+	Mengisi botol A dengan air sampai penuh
+	Membuang seluruh isi botol A
+	Pindahkan isi botol A ke B sampai botol B penuh
+	Mengisi botol B dengan air samapi penuh
+	Membuang seluruh isi botol B
+	Memindahkan isi botol B ke bolot A sampai penuh
+	
+	output program adalah perintah perintah yang harus dilakukan untuk mendapatkan air dengan volume 4 liter mislanya:
+	isi A
+	pindahkan A ke B
+	buang B
+	pindah A ke B
+*/
