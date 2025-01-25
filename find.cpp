@@ -1,16 +1,16 @@
 #include <iostream>
+#include<vector>
 #include <algorithm>
 using namespace std;
 int main() {
-      int arr[] = {2, 5, 3, 4, 1};
-      int size = sizeof(arr) / sizeof(arr[0]);
-      int num_to_find = 3;
+      vector<int> number = {5, 3, 1, 2, 4};
+      int num_to_find = 2;
 
-      auto it = find(arr, arr + size, num_to_find);
-
-      if (it != arr + size) 
-            cout << "Number found at index " << it - arr;
-      else 
-            cout << "Number not found in the array";
+      auto it = find(number.begin(), number.end(), num_to_find);
+      if (it != number.end()) {
+            cout << "Found at index " << it - number.begin();
+      } else {
+            cout << "Not Found";
+      }
       return 0;
 }

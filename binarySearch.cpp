@@ -1,13 +1,15 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<algorithm>
 using namespace std;
 int binarySearch(int array[], int left, int right, int target) {
       while (left <= right) {
             int mid = left + (right - left) / 2;
-            if (target == array[mid])
+            if (target == array[mid]) 
                   return mid;
             if (array[mid] < target)
                   left = mid + 1;
-            else 
+            else
                   right = mid - 1;
       }
       return -1;

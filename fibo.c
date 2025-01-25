@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-int fib(int);
-int fib(int x){
+long long fib(long long x);
+long long fib(long long x){
 	
 	if (x <= 1) {
 		return x;
@@ -11,8 +11,6 @@ int fib(int x){
 }
 int main()
 {
-	for(int i = 1; i<=10; i++){
-		printf("%d ",fib(i));
-	}
+	
  	return 0;
 }

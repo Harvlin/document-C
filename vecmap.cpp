@@ -13,6 +13,7 @@ int main() {
       namaSiswa.push_back(nama);
       nilai[nama] = nilaiSiswa; 
 
+      cout << endl;
       for (const auto& pair : namaSiswa) {
             cout << pair << " ";
       }

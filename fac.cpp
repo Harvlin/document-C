@@ -1,16 +1,15 @@
 #include<iostream>
 using namespace std;
 
-int Func(unsigned long long n) {
-	unsigned long long hasil = 1;
-	while (n > 0) {
-		hasil *= n;
-		n--;
+int Func(int n) {
+	if (n == 1) {
+		return 1;
+	} else {
+		return n * Func(n - 1);
 	}
-	return hasil;
 }
 
 int main() {
-	cout << Func(26);
+	cout << Func(5);
 	return 0;
 }

@@ -4,18 +4,18 @@
 using namespace std;
 
 // Function to flatten the 2D matrix into a 1D vector of pairs
-vector<pair<int, pair<int, int>>> flatten(const vector<vector<int>> &matrix) {
-    vector<pair<int, pair<int, int>>> flat;
+vector<   pair<int, pair<int, int>>   > flatten(const vector<vector<int>> &matrix) {
+    vector<   pair<int, pair<int, int>>   > flat;
     for (int i = 0; i < matrix.size(); i++) {
         for (int j = 0; j < matrix[i].size(); j++) {
             flat.push_back({matrix[i][j], {i, j}});
-        }
+        }=[]
     }
     return flat;
 }
 
 // Function to sort the flattened vector
-void qsort(vector<pair<int, pair<int, int>>> &ar) {
+void vectorSort(vector<pair<int, pair<int, int>>> &ar) {
     sort(ar.begin(), ar.end());
 }
 
@@ -49,7 +49,7 @@ int main() {
     vector<pair<int, pair<int, int>>> arr = flatten(array);
     
     // Sort the flattened array
-    qsort(arr);
+    vectorSort(arr);
     
     // Perform binary search on the sorted array
     int result = binarySearch(arr, 0, arr.size() - 1, target);
