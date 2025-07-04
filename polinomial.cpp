@@ -1,7 +1,7 @@
 //Program C++ untuk Evaluasi Polinomial
 
 //Misalnya, kita ingin menghitung nilai dari 
-//   P(x)=3x3-2x2+5x-7
+//   P(x)=3x^3-2x^2+5x-7
 //      untuk nilai x tertentu.
 
 #include <iostream>

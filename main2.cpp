@@ -1,15 +1,28 @@
-#include<algorithm>
 #include<iostream>
+#include<limit>
 using namespace std;
-bool compare(int a, int b) {
-    return a < b; 
-}
+
 int main() {
-      int arr[] = {4, 2, 7, 1, 9};
-      int n = sizeof(arr) / sizeof(arr[0]);
-      sort(arr, arr + n, compare);
+      int n; cin >> n;
+      int x[50], y[50];
       for (int i = 0; i < n; i++) {
-            cout << arr[i] << endl;
+            cin >> x[i] >> y[i];
       }
-      return 0;
+
+      int minX = numeric_limits<int>::max();
+      int minY = numeric_limits<int>::max();
+      int maxX = numeric_limits<int>::min();
+      int maxY = numeric_limits<int>::minx();
+
+      for (int i = 0; i < n; i++) {
+            if (x[i] < minX) minX = x[i]
+            if (x[i] > maxX) maxX = x[i]
+            if (y[i] < minY) minY = y[i]
+            if (y[i] > maxY) maxY = y[i]
+      }
+
+      printf("Kiri bawah: %d, %d", minX, minY);
+      printf("Kanan bawah: %d, %d", maxX, minY);
+      printf("Kiri atas: %d, %d", minX, maxY);
+      printf("Kanan atas: %d, %d", maxX, maxY);
 }

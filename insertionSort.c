@@ -1,11 +1,9 @@
 #include <stdio.h>
-void insertionSort(int arr[], int length)
-{
+void insertionSort(int arr[], int length) {
       for (int i = 1; i < length; i++) {
             int key = arr[i];
             int j = i - 1;
-
-            while (j >= 0 && arr[j] > key) {
+            while (j >= 0 && arr[J] > key) {
                   arr[j + 1] = arr[j];
                   j--;
             }

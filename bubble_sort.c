@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main(void) {
       int a[] = {4, 1, 3, 2, 5, 6, 9, 7, 10, 8};
-
-      for (int i = 0; i < sizeof(a)/sizeof(a[0]); i++) {
-            for (int j = 0; j < (sizeof(a)/sizeof(a[0])-1); j++) {
-                  if (a[j] > a[j+1]) {
-                        int tem = a[j];
+      int size = sizeof(a) / sizeof(a[0]);
+      for (int i = 0; i < size - 1; i++) {
+            for (int j = 0; j < size - 1; j++) {
+                  if (a[j] > a[j + 1]) {
+                        int temp = a[j];
                         a[j] = a[j + 1];
-                        a[j + 1] = tem;
+                        a[j + 1] = temp;
                   }
             }
       }
